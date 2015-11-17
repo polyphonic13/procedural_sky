@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{3C4BC647-58CC-114F-92EF-54BFC79377FA}</ProjectGuid>
+	<ProjectGuid>{3BA57153-A780-38BE-89F4-9584DC3C97F5}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -46,17 +46,36 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\AboutEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\ExportTerrain.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\GaiaDefaultsEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\GaiaManagerEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\GaiaMaskExporterEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\GaiaResourceEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\ResourceVisualiserEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\ScannerEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\ShorelineMaskerEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\SpawnerEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\SpawnerGroupEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\SpawnerRuleDrawer.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\StamperEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\TerrainHelperEditor.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Editor\TexturePickerEditor.cs" />
      <Compile Include="Assets\Sonic Ether\Natural Bloom\Editor\SENaturalBloomAndDirtyLensEditor.cs" />
      <None Include="Assets\Sonic Ether\Natural Bloom\Shaders\SENaturalBloomAndDirtyLens.shader" />
      <None Include="Assets\Sonic Ether\Natural Bloom\Shaders\SEParticlesAdditive.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Gaia\3rd Party Samplers\README.txt" />
+     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Gaia\3rd Party Samplers\3DForge\Documents\Village Exteriors Kit v1.0 - user guide.txt" />
      <None Include="Assets\Sonic Ether\Natural Bloom\Shaders\SEEmissiveTextured.shader" />
-     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\materials\BackfaceBumpDiffuse.shader" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
-     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\Gaia\3rd Party Samplers\MotuProprio\RealRock Vol I\Readme.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -71,9 +90,6 @@
  </Reference>
  <Reference Include="UnityEditor.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -108,9 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{B3A95F57-CF0B-4CD7-0C5C-CDCD14099C8E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{2AFCC146-3D79-78B7-3898-66BAA6175C7D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{3CD9109D-8484-4B2C-849A-C1F4A842EE6C}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{15F9BDD6-C81C-052A-2F29-9F959833FAEF}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

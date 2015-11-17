@@ -35,6 +35,7 @@ public class SkySettings : MonoBehaviour {
 	void Start () {
 		mainLight = GetComponent<Light> ();
 		skyMat = RenderSettings.skybox;
+
 	}
 	
 	// Update is called once per frame

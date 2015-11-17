@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{3CD9109D-8484-4B2C-849A-C1F4A842EE6C}</ProjectGuid>
+	<ProjectGuid>{15F9BDD6-C81C-052A-2F29-9F959833FAEF}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,6 +45,42 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Gaia\Scripts\GaiaConstants.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\GaiaDefaults.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\GaiaResource.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\GaiaWorldManager.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\ResourceProtoDNA.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\ResourceProtoDetail.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\ResourceProtoDetailSO.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\ResourceProtoGameObject.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\ResourceProtoGameObjectSO.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\ResourceProtoStamp.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\ResourceProtoTexture.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\ResourceProtoTextureSO.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\ResourceProtoTree.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\ResourceProtoTreeSO.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ResourcesSystem\ResourceVisualiser.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ScanningSystem\Scanner.cs" />
+     <Compile Include="Assets\Gaia\Scripts\SpawningSystem\ICompletion.cs" />
+     <Compile Include="Assets\Gaia\Scripts\SpawningSystem\IFitness.cs" />
+     <Compile Include="Assets\Gaia\Scripts\SpawningSystem\ILocation.cs" />
+     <Compile Include="Assets\Gaia\Scripts\SpawningSystem\ISpawn.cs" />
+     <Compile Include="Assets\Gaia\Scripts\SpawningSystem\SpawnCriteria.cs" />
+     <Compile Include="Assets\Gaia\Scripts\SpawningSystem\SpawnInfo.cs" />
+     <Compile Include="Assets\Gaia\Scripts\SpawningSystem\SpawnInstance.cs" />
+     <Compile Include="Assets\Gaia\Scripts\SpawningSystem\SpawnRule.cs" />
+     <Compile Include="Assets\Gaia\Scripts\SpawningSystem\Spawner.cs" />
+     <Compile Include="Assets\Gaia\Scripts\SpawningSystem\SpawnerGroup.cs" />
+     <Compile Include="Assets\Gaia\Scripts\StampingSystem\Stamper.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Utils\HeightMap.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Utils\QuadTree.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Utils\Singleton.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Utils\TerrainHelper.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Utils\TimedInstance.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Utils\UnityHeightMap.cs" />
+     <Compile Include="Assets\Gaia\Scripts\Utils\Utils.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ValueAdds\FrameRateManager.cs" />
+     <Compile Include="Assets\Gaia\Scripts\ValueAdds\Growth.cs" />
      <Compile Include="Assets\Sonic Ether\Natural Bloom\Demo Scene\Scripts\SENBDLCameraAnimation.cs" />
      <Compile Include="Assets\Sonic Ether\Natural Bloom\Demo Scene\Scripts\SENBDLGlobal.cs" />
      <Compile Include="Assets\Sonic Ether\Natural Bloom\Demo Scene\Scripts\SENBDLGlowingOrbitingCube.cs" />
@@ -55,22 +91,23 @@
      <Compile Include="Assets\scripts\SkySettings.cs" />
      <None Include="Assets\Sonic Ether\Natural Bloom\Shaders\SENaturalBloomAndDirtyLens.shader" />
      <None Include="Assets\Sonic Ether\Natural Bloom\Shaders\SEParticlesAdditive.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Gaia\3rd Party Samplers\README.txt" />
+     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Gaia\3rd Party Samplers\3DForge\Documents\Village Exteriors Kit v1.0 - user guide.txt" />
      <None Include="Assets\Sonic Ether\Natural Bloom\Shaders\SEEmissiveTextured.shader" />
-     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\materials\BackfaceBumpDiffuse.shader" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
-     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\Gaia\3rd Party Samplers\MotuProprio\RealRock Vol I\Readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -78,7 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{B3A95F57-CF0B-4CD7-0C5C-CDCD14099C8E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{2AFCC146-3D79-78B7-3898-66BAA6175C7D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
