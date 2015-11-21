@@ -87,8 +87,9 @@
      <Compile Include="Assets\Sonic Ether\Natural Bloom\Demo Scene\Scripts\SENBDLMainCube.cs" />
      <Compile Include="Assets\Sonic Ether\Natural Bloom\Demo Scene\Scripts\SENBDLOrbitingCube.cs" />
      <Compile Include="Assets\Sonic Ether\Natural Bloom\Scripts\SENaturalBloomAndDirtyLens.cs" />
+     <Compile Include="Assets\scripts\Extras.cs" />
+     <Compile Include="Assets\scripts\MoonController.cs" />
      <Compile Include="Assets\scripts\SkyController.cs" />
-     <Compile Include="Assets\scripts\SkySettings.cs" />
      <None Include="Assets\Sonic Ether\Natural Bloom\Shaders\SENaturalBloomAndDirtyLens.shader" />
      <None Include="Assets\Sonic Ether\Natural Bloom\Shaders\SEParticlesAdditive.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
