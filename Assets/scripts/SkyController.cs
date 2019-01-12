@@ -25,6 +25,8 @@ public class SkyController : MonoBehaviour {
 	public Vector3 dayRotationSpeed = new Vector3(-2, 0, 0);
 	public Vector3 nightRotationSpeed = new Vector3(-2, 0, 0); 
 
+	private Vector3 rotationSpeed;
+
 	private float skySpeed = 1f;
 
 	private Light mainLight;
@@ -62,12 +64,16 @@ public class SkyController : MonoBehaviour {
 
 		Debug.Log ("dot = " + dot + " rot = " + (dayRotationSpeed * Time.deltaTime * skySpeed));
 		if(dot > 0) {
-			this.transform.Rotate(dayRotationSpeed * Time.deltaTime * skySpeed);
+			rotationSpeed = dayRotationSpeed;
 		} else {
-			this.transform.Rotate(nightRotationSpeed * Time.deltaTime * skySpeed);
+			rotationSpeed = nightRotationSpeed;
 		}
 
-		stars.rotation = this.transform.rotation;
+		this.transform.Rotate(rotationSpeed * Time.deltaTime * skySpeed);
+
+		if(stars != null) {
+			stars.transform.Rotate(rotationSpeed * Time.deltaTime * skySpeed);
+		}
 
 		if(Input.GetKeyDown(KeyCode.Q)) skySpeed *= 0.5f;
 		if(Input.GetKeyDown(KeyCode.E)) skySpeed *= 2f;
